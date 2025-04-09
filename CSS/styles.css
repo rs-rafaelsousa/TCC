@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(to right, #0d1f6e, #011d9c);
+    color: aliceblue;
+}
+
+.logo {
+    text-align: left;
+}
+
+.logo img {
+    margin-top: 30px;
+}
+
+.nav-bar {
+    background-color: #041355;
+    padding-left: 10px;
+    text-align: center;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex; 
+    justify-content: center; 
+    
+}
+
+.nav-list li {
+    margin: 0 15px;
+    position: relative;
+    top: -45px;
+}
+
+.nav-list li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    transition: color 0.3s;
+    padding: 20px;
+    text-align: center;
+}
+
+.nav-list li a:hover {
+    color: #006eff;
+}
+
+section {
+    padding: 50px 20px;
+    margin: 20px 0;
+}
+
+section h2 {
+    color: #006eff;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+section p {
+    font-size: 16px;
+    color: aliceblue;
+    text-align: left;
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    margin-top: 20px;
+    
+}
+
+.nav-item {
+   background-color: none;
+   border-radius: 250px;
+   border-style: solid;
+   border-color: rgb(43, 0, 201);
+
+}
+
+.nav-item li:active{
+    box-shadow: 0 0 10px #006eff, 0 0 20px #006eff, 0 0 30px #006eff;
+    background-color: #006eff; /* Preenche o fundo */
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #006eff, 0 0 20px #006eff, 0 0 25px #006eff, 0 0 30px #006eff, 0 0 35px #006eff;
+    background-color: #004f91;
+
+}
+.imgi {
+    text-align: right;
+}
+
+.imgi img {
+    height: 600px; 
+}
+
+.logoi {
+    text-align: left;
+}
+
+.logoi img {
+    height: 200px; 
+}
+
+
+@media (max-width: 768px) {
+    .nav-list li {
+        display: inline-flex;
+        position: relative;
+        top: -45px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .container {
+        flex-direction: column; 
+        text-align: center; 
+    }
+
+    .imgi img, .logoi img {
+        width: 100%; 
+        height: auto;
+    }
+}
