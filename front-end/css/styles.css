@@ -7,7 +7,7 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background: linear-gradient(to right, #05458f, #0624aa);
+    background:#0D1517;
     color: aliceblue;
     overflow-x: hidden;
 }
@@ -17,16 +17,16 @@ body {
 }
 
 .logo img {
-    margin-top: -30px;
+    margin-top: -100px;
     position: relative;
     top: 65px;
 }
 
 .nav-bar {
-    background-color: #041355;
+    background: linear-gradient(120deg, #5D2100, #C34400);
     padding: 10px 20px;
     text-align: center;
-    height: 150px;
+    height: 78px;
 }
 
 .nav-list {
@@ -39,21 +39,21 @@ body {
 .nav-list li {
     margin: 10px 15px;
     position: relative;
-    top: -60px;
+    top: -66px;
 }
 
 .nav-list li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 16.5px;
     transition: color 0.3s;
-    padding: 10px;
+    padding: 15px;
     display: inline-block;
 }
 
 .nav-list li a:hover {
-    color: #006eff;
+    color: #ff8800;
 }
 
 section {
@@ -63,7 +63,7 @@ section {
 }
 
 section h2 {
-    color: #006eff;
+    color: #ff7300;
     margin-bottom: 20px;
     text-align: left;
 }
@@ -87,8 +87,9 @@ section p {
 }
 
 .nav-item {
-    border-radius: 250px;
-    border: 2px solid rgb(43, 0, 201);
+    border-radius: 90px;
+    border: 2px solid rgb(255, 123, 0);
+
 }
 
 .nav-item li:active {
@@ -98,9 +99,12 @@ section p {
 }
 
 .imgi {
-    flex: 1;
     text-align: center;
     padding: 20px;
+    position: relative;
+.imgi .logoi{
+position: absolute;
+top: 60px;
 }
 
 .imgi img {
@@ -142,4 +146,5 @@ section p {
     .imgi, .logoi {
         padding: 10px 0;
     }
+}
 }
